@@ -55,6 +55,8 @@ public class MapsActivity extends AppCompatActivity implements
         mMap.setOnMyLocationButtonClickListener(onMyLocationButtonClickListener);
         mMap.setOnMyLocationClickListener(onMyLocationClickListener);
         enableMyLocationIfPermitted();
+            
+         mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.setMinZoomPreference(15);
